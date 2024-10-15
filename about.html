@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Rosa Rossa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700;800&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    
+<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Foto/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <img src="Foto/close.svg" class="x" onclick="hideMenu()">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="cosafacciamo.html">COSA FACCIAMO</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="contattaci.html">CONTATTACI</a></li>
+            </ul>
+            </div>
+            <div class="burger-menu" onclick="showMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    <h1>Chi Siamo</h1>
+</section>
+
+<!-- Chi siamo contenuto -->
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>La Nostra Struttura Specialistica</h1>
+            <p>La nostra è una Struttura Specialistica che si occupa di minori donne nella fascia 14/21 sottoposte a provvedimenti civili, amministrativi o penali da parte dell’autorità giudiziaria. <br>
+
+                Il nome della casa che ospita le utenti è la Rosa Rossa ed è configurato <br> come un servizio residenziale h24. <br>
+                Ospitiamo fino a 7 utenti che vengono accompagnate da una Equipe di professionisti qualificati che assistono le minori e le giovani accompagnandole in tutte le fasi della loro crescita durante tutto il percorso mirato all’indipendenza, alla presa di coscienza del Sé e delle proprie abilità personali e relazionali e dove richiesto anche alla restituzione del danno. <br>
+                
+                La quotidianità delle utenti si svolge come quella di una loro pari all’esterno del contesto Struttura.
+                
+                Ossia distribuita tra l’attività scolastica o la frequenza a corsi professionali, attività educative e momenti di svago organizzati da noi.</p>
+            <a href="" class="hero-btn red-btn">SCOPRI ORA</a>
+        </div>
+        <div class="about-col">
+            <img src="Foto/about.jpg">
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quam nemo obcaecati, <br> accusantium quibusdam sapiente unde, consectetur possimus, aliquid molestiae corporis temporibus iste natus odio placeat sit in nostrum vitae.</p>
+</section>
+
+<!-- Script -->
+
+<script>
+    var navLinks = document.getElementById("navLinks") ;
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Rosa Rossa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700;800&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    
+<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Foto/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+            <img src="Foto/close.svg" class="x" onclick="hideMenu()">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="cosafacciamo.html">COSA FACCIAMO</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="contattaci.html">CONTATTACI</a></li>
+            </ul>
+            </div>
+            <div class="burger-menu" onclick="showMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    <h1>Cosa Facciamo</h1>
+</section>
+
+<!-- Cosa facciamo contenuto -->
+
+<section class="Servizi">
+    <h1>Questi sono i nostri Servizi</h1>
+    <p>Tra le cose che noi abbiamo da offrirvi ci sono</p>
+
+    <div class="row">
+        <div class="servizi-col">
+            <h3>Servizio Residenziale</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis architecto molestias, accusantium rem eaque eius ipsa vel omnis praesentium! Corrupti ad libero ex quaerat sapiente sed, expedita reiciendis eius dicta!</p>
+        </div>
+        <div class="servizi-col">
+            <h3>Assistenza Qualificata</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis architecto molestias, accusantium rem eaque eius ipsa vel omnis praesentium! Corrupti ad libero ex quaerat sapiente sed, expedita reiciendis eius dicta!</p>
+        </div>
+        <div class="servizi-col">
+            <h3>Attività Ricreative</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis architecto molestias, accusantium rem eaque eius ipsa vel omnis praesentium! Corrupti ad libero ex quaerat sapiente sed, expedita reiciendis eius dicta!</p>
+        </div>
+        <div class="servizi-col">
+            <h3>Corsi di formazione</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis architecto molestias, accusantium rem eaque eius ipsa vel omnis praesentium! Corrupti ad libero ex quaerat sapiente sed, expedita reiciendis eius dicta!</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Struttura -->
+
+<section class="struttura">
+    <h1>La nostra struttura</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+    <div class="row">
+        <div class="struttura-col">
+            <img src="Foto/cafeteria.png" alt="">
+            <h3>La Struttura</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae iure! Laudantium, consectetur! Voluptatem sit repellendus suscipit voluptatum. Illum veritatis pariatur quod alias. Quidem, iusto sapiente. Corporis accusantium tempora id.</p>
+        </div>
+        <div class="struttura-col">
+            <img src="Foto/basketball.png" alt="">
+            <h3>Le Nostre Attività</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae iure! Laudantium, consectetur! Voluptatem sit repellendus suscipit voluptatum. Illum veritatis pariatur quod alias. Quidem, iusto sapiente. Corporis accusantium tempora id.</p>
+        </div>
+        <div class="struttura-col">
+            <img src="Foto/cafeteria.png" alt="">
+            <h3>Chi Siamo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, molestiae iure! Laudantium, consectetur! Voluptatem sit repellendus suscipit voluptatum. Illum veritatis pariatur quod alias. Quidem, iusto sapiente. Corporis accusantium tempora id.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quam nemo obcaecati, <br> accusantium quibusdam sapiente unde, consectetur possimus, aliquid molestiae corporis temporibus iste natus odio placeat sit in nostrum vitae.</p>
+</section>
+
+<!-- Script -->
+
+<script>
+    var navLinks = document.getElementById("navLinks") ;
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
