@@ -65,14 +65,15 @@
             </div>
         </div>
         <div class="contact-col">
-            <form action="form-handler.php" method="post">
-                <input type="text" name="name" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="text" name="subject" placeholder="Oggetto" required>
-                <textarea rows="8" name="message" placeholder="Messaggio"></textarea>
-                <button type="submit" class="hero-btn red-btn">Invia Messaggio</button>
+            <form id="contact-form">
+               <input type="text" name="name" placeholder="Nome" required>
+               <input type="email" name="email" placeholder="Email" required>
+               <input type="text" name="subject" placeholder="Oggetto" required>
+               <textarea rows="8" name="message" placeholder="Messaggio" required></textarea>
+               <button type="submit" class="hero-btn red-btn">Invia Messaggio</button>
             </form>
-        </div>
+         </div>
+         
     </div>
 </section>
 <!-- Footer -->
@@ -95,6 +96,39 @@
         navLinks.style.right = "-200px";
     }
 </script>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("qJN8cGDhzfJpXVxhD");  // Sostituisci con il tuo User ID da EmailJS
+   })();
+</script>
+
+<script type="text/javascript">
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+       event.preventDefault(); // Impedisce il comportamento predefinito del form (non invia la pagina)
+ 
+       // Parametri dell'email
+       const params = {
+          name: document.querySelector('input[name="name"]').value,
+          email: document.querySelector('input[name="email"]').value,
+          subject: document.querySelector('input[name="subject"]').value,
+          message: document.querySelector('textarea[name="message"]').value,
+       };
+ 
+       // Invia l'email tramite EmailJS
+       emailjs.send('service_g3hpqod', 'kORMazPMtW_dLREhpzinw', params)
+          .then(function(response) {
+             console.log('SUCCESS!', response.status, response.text);
+             alert('Messaggio inviato con successo!');
+          }, function(error) {
+             console.log('FAILED...', error);
+             alert('Errore durante l\'invio del messaggio.');
+          });
+    });
+ </script>
+ 
+
 
 </body>
 </html>
