@@ -20,7 +20,6 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="cosafacciamo.html">COSA FACCIAMO</a></li>
-                <li><a href="">BLOG</a></li>
                 <li><a href="contattaci.html">CONTATTACI</a></li>
             </ul>
             </div>
@@ -65,7 +64,8 @@
             </div>
         </div>
         <div class="contact-col">
-            <form id="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                <input type="hidden" name="access_key" value="e23f6a45-55ac-4d1d-9525-484d7835db5c">
                <input type="text" name="name" placeholder="Nome" required>
                <input type="email" name="email" placeholder="Email" required>
                <input type="text" name="subject" placeholder="Oggetto" required>
@@ -96,39 +96,6 @@
         navLinks.style.right = "-200px";
     }
 </script>
-
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("qJN8cGDhzfJpXVxhD");  // Sostituisci con il tuo User ID da EmailJS
-   })();
-</script>
-
-<script type="text/javascript">
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-       event.preventDefault(); // Impedisce il comportamento predefinito del form (non invia la pagina)
- 
-       // Parametri dell'email
-       const params = {
-          name: document.querySelector('input[name="name"]').value,
-          email: document.querySelector('input[name="email"]').value,
-          subject: document.querySelector('input[name="subject"]').value,
-          message: document.querySelector('textarea[name="message"]').value,
-       };
- 
-       // Invia l'email tramite EmailJS
-       emailjs.send('service_g3hpqod', 'kORMazPMtW_dLREhpzinw', params)
-          .then(function(response) {
-             console.log('SUCCESS!', response.status, response.text);
-             alert('Messaggio inviato con successo!');
-          }, function(error) {
-             console.log('FAILED...', error);
-             alert('Errore durante l\'invio del messaggio.');
-          });
-    });
- </script>
- 
-
 
 </body>
 </html>
