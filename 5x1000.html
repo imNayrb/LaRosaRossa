@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Rosa Rossa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700;800&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="Foto/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+        <img src="Foto/close.svg" class="x" onclick="hideMenu()">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="cosafacciamo.html">COSA FACCIAMO</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="contattaci.html">CONTATTACI</a></li>
+        </ul>
+        </div>
+        <div class="burger-menu" onclick="showMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <h1>Chi Siamo</h1>
+</section>
+
+<!-- 5x1000 -->
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>Come donare il 5x1000?</h1>
+            <p>Se presenti il Modello 730 o Redditi (Ex Unico) puoi apporre la tua firma sul riquadro <br>
+                indicando nello spazio sottostante il Codice Fiscale: 97056360791 come riportato nell’immagine d’esempio. <br>
+                Anche se non devi presentare la dichiarazione dei redditi puoi devolvere 5×1000: <br>
+                1. Compila la scheda fornita insieme al CUD dal tuo datore di lavoro o dall’ente erogatore della pensione, firmando nel riquadro indicato come “Sostegno alle organizzazioni non lucrative” e indicando il codice fiscale dell’Associazione Bussola d’Oro 97056360791;
+                2. inserisci la scheda in una busta chiusa;
+                3. Scrivi sulla busta “DESTINAZIONE CINQUE PER MILLE IRPEF” e indica il tuo cognome, nome e codice fiscale;
+                4. Consegnala a un ufficio postale (che la riceverà gratuitamente) o a un intermediario abilitato alla trasmissione telematica (CAF, commercialisti…).</p>
+        </div>
+        <div class="about-col">
+            <img src="Foto/example.jpg">
+        </div>
+    </div>
+
+        <div class="about-col">
+            <h1>Come utilizziamo la tua donazione</h1>
+            <p>Qualsiasi forma di supporto economico ricevuta viene investita con l’intento di nutrire il benessere delle ospiti della struttura. <br> 
+                Supportando La Bussola D’Oro con il tuo 5×1000, contribuirai all’attivo mantenimento dell’Associazione e, soprattutto, alla tutela delle attività ricreative ed educative che accompagnano gli interessi delle ragazze a cui ci dedichiamo. <br> 
+                Un piccolo gesto può regalare un sorriso in più, che si trasforma, con l’impegno e la dedizione, in un sogno realizzabile. <br> 
+                Per ogni domanda, CONTATTACI e ti aiuteremo volentieri!</p>
+                <a href="contattaci.html" class="hero-btn contact-btn">SCOPRI ORA</a>
+        </div>
+
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <i class='bx bxl-facebook-circle'></i>
+    <i class='bx bxl-instagram' ></i>
+</section>
+
+<!-- Script -->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
