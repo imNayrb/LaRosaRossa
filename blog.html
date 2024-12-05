@@ -23,7 +23,7 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="cosafacciamo.html">COSA FACCIAMO</a></li>
-                <li><a href="">BLOG</a></li>
+                <li><a href="blog.html">BLOG</a></li>
                 <li><a href="contattaci.html">CONTATTACI</a></li>
             </ul>
             </div>
@@ -36,25 +36,31 @@
     <h1>Il Nostro Blog</h1>
 </section>
 
-<!-- Blog Page Content -->
+<section class="blog-list">
 
-<section class="blog-content">
+    <article class="blog-post" data-id="1">
+        <img src="Foto/articolo1.jpg" alt="Foto articolo 1">
+        <h2>Gestire le emozioni</h2>
+        <button class="hero-btn contact-btn" onclick="openArticle(1)">Scopri di più</button>
+    </article>
+    
+    <article class="blog-post" data-id="2">
+        <img src="Foto/articolo2.jpg" alt="Foto articolo 2">
+        <h2>Educare alla sicurezza online</h2>
+        <button class="hero-btn contact-btn" onclick="openArticle(2)">Scopri di più</button>
+    </article>
+    
+    <article class="blog-post" data-id="3">
+        <img src="Foto/articolo3.jpg" alt="Foto articolo 3">
+        <h2>Affrontare il bullismo</h2>
+        <button class="hero-btn contact-btn" onclick="openArticle(3)">Scopri di più</button>
+    </article>
 
-   <div class="row">
-    <div class="blog-left">
-        <img src="Foto/certificate.jpg">
-        <h2>Il Nostro Blog</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt accusamus assumenda. Quas iure tempora architecto aperiam facilis? Omnis quia pariatur ex modi laudantium illo possimus aspernatur consequatur quis repellendus.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum harum iusto eius asperiores quisquam, ipsum neque, itaque porro reiciendis atque laborum ex natus est animi non adipisci, deleniti eos?</p>
-        <br>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum reiciendis quisquam porro, voluptate provident eius debitis aut praesentium atque error neque, veniam sit quos, rem et obcaecati temporibus earum hic!</p>
-    </div>
-    <div class="blog-right">
-        <h3></h3>
-    </div>
-   </div>
-
+    <article class="blog-post" data-id="4">
+        <img src="Foto/articolo4.jpg" alt="Foto articolo 4">
+        <h2>Relazioni sociali e familiari</h2>
+        <button class="hero-btn contact-btn" onclick="openArticle(4)">Scopri di più</button>
+    </article>
 </section>
 
 <!-- Footer -->
@@ -66,6 +72,7 @@
 </section>
 
 <!-- Script -->
+<script src="script.js"></script>
 
 <script>
     var navLinks = document.getElementById("navLinks") ;

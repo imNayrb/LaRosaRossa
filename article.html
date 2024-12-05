@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Rosa Rossa - Articolo</title>
+    <link rel="icon" href="Foto/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    
+<!-- Header -->
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="Foto/logo.png" alt="Logo"></a>
+        <div class="nav-links" id="navLinks">
+            <img src="Foto/close.svg" class="x" onclick="hideMenu()" alt="Chiudi menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="cosafacciamo.html">COSA FACCIAMO</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contattaci.html">CONTATTACI</a></li>
+            </ul>
+        </div>
+        <div class="burger-menu" onclick="showMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+</section>
+
+<!-- Articolo -->
+<main>
+    <section class="article-container">
+        <div class="article-image">
+            <img id="article-image" src="Foto/default-image.jpg" alt="Foto articolo">
+        </div>
+        <div class="article-content">
+            <h1 id="article-title"></h1>
+            <div id="article-text">
+                <p>Il contenuto dell'articolo verrà caricato qui in modo dinamico.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <div class="social-icons">
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+    </div>
+</section>
+
+<!-- Script -->
+<script src="script.js"></script>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
