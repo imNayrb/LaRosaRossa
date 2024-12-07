@@ -38,48 +38,61 @@
 
 <!-- Contattaci -->
 
+<section class="contattaci-form">
+    <h1>Mandaci una mail qui</h1>
+
+    <div class="contact-col">
+        <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="subject" placeholder="Oggetto" required>
+            <textarea rows="8" name="message" placeholder="Messaggio"></textarea>
+            <button type="submit" class="hero-btn contact-btn">Invia Messaggio</button>
+        </form>
+    </div>
+</section>
+
 <section class="location">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2612.207603390147!2d16.59974896640783!3d38.86781078176519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1340074024288eed%3A0x6e0c21c041582b8c!2sLa%20Rosa%20Rossa!5e0!3m2!1sit!2sit!4v1728739587887!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
 <section class="contact-us">
-    <div class="row">
-        <div class="contact-col">
-            <div>
-                <img class="fa fa-home" src="Foto/25694-removebg-preview.png">
-                <span>
-                    <h5>Via XXVIII Ottobre n.3</h5>
-                    <p>Quartiere S.Maria, 88100 Catanzaro CZ</p>
-                </span>
-            </div>
-            <div>
-                <img class="fa fa-phone" src="Foto/png-clipart-black-telephone-computer-icons-mobile-phones-telephone-call-icon-design-phone-icon-miscellaneous-hand-thumbnail-removebg-preview.png">
-                <span>
-                    <h5>+39 335 6001734 Pasquale Amoroso (presidente)</h5>
-                    <h5>0961 532781</h5>
-                    <p>Pasquale Amoroso (presidente) </p>
-                </span>
-            </div>
-            <div>
-                <img class="fa fa-envelope-o" src="Foto/png-transparent-mail-computer-icons-email-graphy-e-mail-miscellaneous-angle-rectangle-thumbnail-removebg-preview.png">
-                <span>
-                    <h5>bussoladoro@pac.it</h5>
-                    <h5>bussoladoro.cz@alice.it</h5>
-                    <p>Mandaci una mail qui</p>
-                </span>
-            </div>
-        </div>
-        <div class="contact-col">
-            <form action="form-handler.php" method="post">
-                <input type="text" name="name" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="text" name="subject" placeholder="Oggetto" required>
-                <textarea rows="8" name="message" placeholder="Messaggio"></textarea>
-                <button type="submit" class="hero-btn contact-btn">Invia Messaggio</button>
-            </form>
-        </div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Referente</th>
+                <th>Servizio</th>
+                <th>Telefono</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Dott. Pasquale Amoroso</td>
+                <td>Presidente</td>
+                <td>+39 335 6001734</td>
+                <td>bussoladoro@pac.it</td>
+            </tr>
+            <tr>
+                <td>Dott. Andrea Amoroso</td>
+                <td>Responsabile</td>
+                <td>+39 349 4571598</td>
+                <td>bussoladoro.cz@alice.it</td>
+            </tr>
+            <tr>
+                <td>Dott. Simone Amoroso</td>
+                <td>Settore Amministrativo</td>
+                <td>+39 388 7768791</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Sede Operativa</td>
+                <td>0961 532781</td>
+                <td></td>
+            </tr>
+        </table>
     </div>
 </section>
+
 <!-- Footer -->
 
 <section class="footer">
