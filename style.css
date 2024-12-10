@@ -857,3 +857,227 @@ p.erri {
         font-size: 1em;
     }
 }
+
+/* Associazione */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Card styles */
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Icon in the top-right corner */
+.card .icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #4caf50;
+}
+
+/* Card title */
+.card h3 {
+    margin: 40px 0 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+    text-align: left;
+}
+
+/* Hover effect */
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+
+
+.roles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .role-box {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    background-color: #81a694;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s ease, box-shadow 0.7s ease, heigth 2s ease;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .role-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    height: 350px;
+    transition: 0.3s;
+  }
+  
+  .role-icon {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 10px auto;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .role-box h3 {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .role-details {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    padding: 0 15px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, height 0.3s ease;
+  }
+  
+  .role-box:hover .role-details {
+    opacity: 1;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .partner-section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .partner-section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styling delle voci accordion */
+  .accordion-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Styling del header dell'accordion */
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #81a694;
+    padding: 15px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion-title {
+    flex-grow: 1;
+  }
+  
+  /* Icona della freccia */
+  .accordion-icon {
+    font-size: 1.6rem;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Styling del contenuto che si apre */
+  .accordion-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    display: none;
+  }
+  
+  .accordion-content ul {
+    list-style: none;
+  }
+  
+  .accordion-content li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .accordion-content li i {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #81a694
+  }
+  
+  /* Hover sugli item della lista */
+  .accordion-content li:hover {
+    cursor: pointer;
+  }
+  
+  /* Media queries per dispositivi mobili */
+  @media (max-width: 768px) {
+    .accordion-header {
+      font-size: 1.1rem;
+      padding: 12px;
+    }
+  
+    .accordion-content li {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .accordion-header {
+      font-size: 1rem;
+    }
+  
+    .accordion-content li {
+      font-size: 12px;
+    }
+  
+    .accordion-content li i {
+      font-size: 20px;
+    }
+  }
