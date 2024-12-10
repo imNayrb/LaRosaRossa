@@ -557,7 +557,7 @@ h3{
 }
 
 /* Stili delle card (solo mobile) */
-.card-container {
+.card-container1 {
     width: 100%;
     display: flex;
     flex-direction: column;
