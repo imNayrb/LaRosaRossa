@@ -258,6 +258,7 @@ h3{
     top: 0;
     left: 0;
     transition: 0.5s;
+    z-index: 100;
 }
 
 .layer:hover{
@@ -861,11 +862,11 @@ p.erri {
 /* Associazione */
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
+    justify-content: center;
+    margin-top: 50px;
     width: 100%;
 }
 
@@ -1081,3 +1082,14 @@ p.erri {
       font-size: 20px;
     }
   }
+
+  .velo-col {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    pointer-events: none;
+}
