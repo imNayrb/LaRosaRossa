@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Rosa Rossa</title>
+    <link rel="icon" href="Foto/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="Foto/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <img src="Foto/close.svg" class="x" onclick="hideMenu()">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="attivita.html">COSA FACCIAMO</a></li>
+                <li><a href="associazione.html">ASSOCIAZIONE</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="cosafacciamo.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contattaci.html">CONTATTACI</a></li>
+            </ul>
+            <div class="social">
+                <li><i class='bx bxl-facebook-circle'></i></li>
+                <li><i class='bx bxl-instagram' ></i></li>
+            </div>
+        </div>
+        <div class="burger-menu" onclick="showMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <h1>Cosa facciamo</h1>
+</section>
+
+<section class="about-us">
+    <!-- Gallery Section -->
+
+
+<!-- Description Section -->
+<div class="about-col">
+    <h1>La Giornata Tipo</h1>
+    <p>
+       <strong>Giornata Tipo delle Minori in una Comunità Specialistica Educativa</strong>  <br>
+        La giornata delle minori accolte in una comunità specialistica educativa segue una routine strutturata per
+        garantire stabilità, sicurezza e supporto educativo. <br>
+        - 7:00 – 8:00 | Sveglia e Igiene Personale <br>
+        Le ragazze si alzano, fanno colazione e si preparano per la giornata, con supporto educativo per
+        l'autonomia personale. <br>
+        - 8:00 – 13:00 | Attività Scolastiche/Formative <br>
+        Se frequentano la scuola, vengono accompagnate o supportate nella didattica a distanza. Chi non è
+        iscritta a scuola svolge percorsi formativi o attività educative in comunità. <br>
+        - 13:00 – 14:00 | Pranzo e Pausa <br>
+        Il pasto si svolge in un clima sereno, con momenti di socializzazione e condivisione. <br>
+        - 14:00 – 16:00 | Attività Educative e Supporto Individuale <br>
+        Le minori partecipano a laboratori espressivi, attività di gruppo, colloqui individuali con educatori o
+        psicologi per il supporto emotivo. <br>
+        - 16:00 – 18:00 | Tempo Libero e Attività Ricreative <br>
+        Passeggiate, sport, giochi, attività creative o momenti di relax. <br>
+        - 18:00 – 19:00 | Compiti e Studio <br>
+        Le ragazze vengono supportate nei compiti scolastici e nelle attività di apprendimento. <br>
+        - 19:30 – 20:30 | Cena e Condivisione della Giornata <br>
+        Un momento per stare insieme e riflettere sulla giornata trascorsa. <br>
+        - 20:30 – 22:00 | Attività Serali e Relax <br>
+        Film, lettura, giochi da tavolo o altre attività rilassanti. <br>
+        - 22:00 – 22:30 | Preparazione per la Notte <br>
+        Igiene personale e momento di decompressione prima di andare a dormire. <br>
+        - 22:30 | Riposo <br>
+        Le luci si spengono e inizia il riposo notturno. <br>
+<br>
+       <strong>Giornata tipo festiva</strong> <br>
+Nei giorni festivi la routine è più flessibile e orientata a momenti di socialità e svago. <br>
+- 8:30 – 10:00 | Sveglia e Colazione con Calma
+La mattina inizia con più tranquillità rispetto ai giorni feriali. <br>
+- 10:00 – 12:30 | Uscite o Attività Speciali
+Gite, passeggiate, visite culturali o laboratori creativi organizzati per il benessere delle ragazze. <br>
+- 13:00 – 14:30 | Pranzo e Relax
+Momento conviviale con pasti speciali o condivisi con eventuali ospiti. <br>
+- 15:00 – 18:00 | Tempo Libero e Attività di Gruppo
+Sport, cinema, giochi di società, laboratori artistici o uscite comunitarie. <br>
+- 18:00 – 19:30 | Attività di Riflessione o Condivisione
+Discussioni su temi importanti, momenti di confronto o attività educative più leggere. <br>
+- 19:30 – 21:00 | Cena e Relax Serale
+Dopo cena ci si dedica a momenti di tranquillità, magari guardando un film o ascoltando musica. <br>
+- 21:30 – 22:30 | Preparazione al Sonno
+Routine serale con lettura, musica rilassante o altre attività individuali prima di dormire. <br>
+- 22:30 | Riposo Notturno <br>
+    </p>
+</div>
+
+</section>
+
+<script>
+
+var navLinks = document.getElementById("navLinks") ;
+
+function showMenu(){
+    navLinks.style.right = "0";
+}
+
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("mySlides2");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 5000); 
+    }
+
+    function plusSlides(n, slideshowID) {
+        let slides = document.getElementsByClassName("mySlides2");
+        slideIndex += n;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        if (slideIndex < 1) {slideIndex = slides.length}
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
+
+</body>
+</html>

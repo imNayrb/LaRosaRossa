@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Rosa Rossa</title>
+    <link rel="icon" href="Foto/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Foto/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <img src="Foto/close.svg" class="x" onclick="hideMenu()">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="attivita.html">COSA FACCIAMO</a></li>
+                    <li><a href="associazione.html">ASSOCIAZIONE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="cosafacciamo.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contattaci.html">CONTATTACI</a></li>
+                </ul>
+                <div class="social">
+                    <li><i class='bx bxl-facebook-circle'></i></li>
+                    <li><i class='bx bxl-instagram' ></i></li>
+                </div>
+            </div>
+            <div class="burger-menu" onclick="showMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <h1>Gallery</h1>
+    </section>
+
+    <input type="radio" name="Photos" id="check1" checked>
+    <input type="radio" name="Photos" id="check2" >
+    <input type="radio" name="Photos" id="check3" >
+    <input type="radio" name="Photos" id="check4" >
+
+    <div class="containerg">
+        <h1 class="ttl" >La nosta foto gallery</h1>
+        <div class="top-content">
+            <h3 class="ttl3">Gallery</h3>
+            <label class="tipot" for="check1">Tutte le foto</label>
+            <label class="tipot" for="check2">Struttura</label>
+            <label class="tipot" for="check3">Camere</label>
+        </div>
+
+        <div class="photo-gallery">
+            <div class="pic place">
+                <img src="Foto/1.jpg">
+            </div>
+            <div class="pic family">
+                <img src="Foto/2.jpg">
+            </div>
+            <div class="pic child">
+                <img src="Foto/3.jpg">
+            </div>
+            <div class="pic place">
+                <img src="Foto/4.jpg">
+            </div>
+            <div class="pic family">
+                <img src="Foto/5.jpg">
+            </div>
+            <div class="pic child">
+                <img src="Foto/6.jpg">
+            </div>
+            <div class="pic place">
+                <img src="Foto/7.jpg">
+            </div>
+            <div class="pic family">
+                <img src="Foto/8.jpg">
+            </div>
+            <div class="pic child">
+                <img src="Foto/9.jpg">
+            </div>
+            <div class="pic child">
+                <img src="Foto/10.jpg">
+            </div>
+        </div>
+    </div>
+
+<!-- Overlay -->
+<div id="imgOverlay" class="overlay">
+    <span class="close-btn" onclick="closeOverlay(event)">&times;</span>
+    <img id="overlayImg" src="" alt="Ingrandimento">
+  </div>
+  
+    
+    <script>
+            var navLinks = document.getElementById("navLinks") ;
+
+function showMenu(){
+    navLinks.style.right = "0";
+}
+
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+    // Seleziona tutte le immagini nella gallery
+    const images = document.querySelectorAll('.photo-gallery img');
+    const overlay = document.getElementById('imgOverlay');
+    const overlayImg = document.getElementById('overlayImg');
+
+    // Aggiunge un event listener a ogni immagine
+    images.forEach(img => {
+        img.addEventListener('click', function () {
+            overlay.style.display = 'flex';
+            overlayImg.src = this.src;
+        });
+    });
+
+    // Chiude l'overlay
+    function closeOverlay(event) {
+        event.stopPropagation();
+        overlay.style.display = 'none';
+        overlayImg.src = '';
+    }
+
+    // Chiude cliccando fuori dall'immagine
+    overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) {
+            closeOverlay(e);
+        }
+    });
+      </script>
+      
+
+</body>
+</html>

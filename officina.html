@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Rosa Rossa</title>
+    <link rel="icon" href="Foto/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700;800&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav>
+          <a href="index.html"><img src="Foto/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+          <img src="Foto/close.svg" class="x" onclick="hideMenu()">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="attivita.html">COSA FACCIAMO</a></li>
+            <li><a href="associazione.html">ASSOCIAZIONE</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="cosafacciamo.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contattaci.html">CONTATTACI</a></li>
+        </ul>
+          
+          <div class="social">
+              <li><i class='bx bxl-facebook-circle'></i></li>
+              <li><i class='bx bxl-instagram' ></i></li>
+          </div>
+  
+          </div>
+          <div class="burger-menu" onclick="showMenu()">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+          </div>
+      </nav>
+          <h1>Officina della solidarietà</h1>
+      </section>
+
+      <section class="servizi">
+        <p>
+           <strong>Progetto "Officina della Solidarietà"</strong> <br>
+            "Officina della Solidarietà" è un laboratorio creativo in cui le minori accolte nella comunità possono
+            esprimere la propria creatività attraverso la realizzazione di oggetti artigianali unici. Un percorso che unisce
+            manualità, espressione artistica e crescita personale, trasformando idee e talenti in creazioni originali. <br>
+                    
+            Gli oggetti realizzati vengono esposti e venduti durante fiere ed eventi organizzati dalle associazioni del
+            territorio e dalle Pro Loco, creando così un'opportunità concreta di valorizzazione del lavoro artigianale e di
+            sensibilizzazione sulla realtà della comunità. <br>
+                    
+            Oltre alla produzione artigianale, Officina della Solidarietà promuove l’organizzazione di eventi dedicati alla
+            costruzione di una rete sociale solida e partecipativa. Attraverso la collaborazione con enti, associazioni e
+            cittadini, il progetto favorisce momenti di incontro e condivisione, rafforzando il legame tra la comunità e il
+            territorio.
+        </p>
+      </section>
+        
+      <script>
+            var navLinks = document.getElementById("navLinks") ;
+
+function showMenu(){
+    navLinks.style.right = "0";
+}
+
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+        document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
+    const icon = header.querySelector('.accordion-icon');
+
+    // Toglia la visibilità del contenuto
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+
+    // Ruota l'icona
+    icon.style.transform = content.style.display === 'block' ? 'rotate(180deg)' : 'rotate(0deg)';
+  });
+});
+      </script>
+</body>
+</html>
